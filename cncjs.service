@@ -1,0 +1,15 @@
+[Unit]
+Description=CNCjs Control service
+
+[Service]
+User=pi
+ExecStart=/usr/local/bin/cnc
+WorkingDirectory=/home/pi/cnc
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=cncjs
+
+
+[Install]
+WantedBy=multi-user.target
+Alias=cncjs.service
