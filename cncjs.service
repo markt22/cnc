@@ -1,3 +1,5 @@
+# File location in file system
+# /lib/systemd/system/cncjs.service
 [Unit]
 Description=CNCjs Control service
 
